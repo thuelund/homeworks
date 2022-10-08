@@ -37,6 +37,8 @@ int main(){
     idx1 = name.size() % adj.size();
     idx2 = name.size() % ending.size();
 
+    std::cout << std::endl;
+    std::cout << "Here is your description:" << std::endl;
     std::cout << name << ", the " << adj[idx1] << " " << season_map.at(season) << " that " << ending[idx2] << std::endl;
     return 0;
 }
