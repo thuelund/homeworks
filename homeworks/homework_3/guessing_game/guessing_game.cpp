@@ -22,6 +22,7 @@ int main(){
     num2guess = distribution(random_engine);
 
     std::cout << "I've generated a number. Try to guess it!" << std::endl;
+    std::cout << "Please provide the next guess: ";
     std::cin >> guess;
 
     while (condition){
@@ -30,11 +31,13 @@ int main(){
         }
         else if (guess < num2guess){
             std::cout << "Your number is too small. Try again!" << std::endl;
+            std::cout << "Please provide the next guess: ";
             std::cin >> guess;
             ++num_guesses;
         }
         else {
             std::cout << "Your number is too big. Try again!" << std::endl;
+            std::cout << "Please provide the next guess: ";
             std::cin >> guess;
             ++num_guesses;
         }
